@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNO Intersession Survey</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+h1 { text-align: center; margin-bottom: 10px; color: #333; }
+.subtitle { text-align: center; margin-bottom: 30px; font-size: 14px; color: #666; }
+.form-group { margin-bottom: 25px; }
+label { display: block; margin-bottom: 8px; color: #333; font-weight: 500; font-size: 14px; }
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; font-family: inherit;
+}
+textarea { resize: vertical; min-height: 100px; }
+.radio-group, .checkbox-group { display: flex; flex-direction: column; gap: 10px; }
+.radio-item, .checkbox-item { display: flex; align-items: center; }
+input[type="radio"], input[type="checkbox"] { margin-right: 10px; width: 18px; height: 18px; cursor: pointer; }
+button { padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: 600; cursor: pointer; }
+.submit-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.reset-btn { background: #ecf0f1; color: #333; }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>UNO Intersession Survey</h1>
+    <p class="subtitle">Your feedback helps keep the focus on students. Thank you!</p>
+
+    <form action="https://formspree.io/f/xnjbwyny" method="POST" target="_blank">
+
+        <!-- Question 1 -->
+        <div class="form-group">
+            <label for="department">What are you majoring in?</label>
+            <select id="department" name="department">
+                <option value="">-- Select an option --</option>
+                <option value="arts">Arts and Science</option>
+                <option value="business">Business</option>
+                <option value="comm">Communication and Fine Arts</option>
+                <option value="ist">Information Science and Technology</option>
+                <option value="public">Public Affairs and Community Service</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="form-group">
+            <label for="years">How many years have you attended UNO?</label>
+            <select id="years" name="years">
+                <option value="">-- Select an option --</option>
+                <option value="1">1 year or less</option>
+                <option value="2">2 years</option>
+                <option value="3">3 years</option>
+                <option value="4+">4 or more years</option>
+            </select>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="form-group">
+            <label>Do you know what intersession classes are?</label>
+            <div class="radio-group">
+                <div class="radio-item"><input type="radio" name="knowIntersession" value="yes"> Yes</div>
+                <div class="radio-item"><input type="radio" name="knowIntersession" value="no"> No</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="form-group">
+            <label>Did you know that intersession classes have replaced the J term?</label>
+            <div class="radio-group">
+                <div class="radio-item"><input type="radio" name="replaceJ" value="yes"> Yes</div>
+                <div class="radio-item"><input type="radio" name="replaceJ" value="no"> No</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="form-group">
+            <label>Are you interested in taking an intersession class?</label>
+            <div class="radio-group">
+                <div class="radio-item"><input type="radio" name="interested" value="interested"> Interested</div>
+                <div class="radio-item"><input type="radio" name="interested" value="neutral"> Neutral</div>
+                <div class="radio-item"><input type="radio" name="interested" value="uninterested"> Uninterested</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="form-group">
+            <label>Do you or have you used J term for classes?</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item"><input type="checkbox" name="jTermUsage" value="helpful"> I have and it was helpful</div>
+                <div class="checkbox-item"><input type="checkbox" name="jTermUsage" value="hoping"> I have not but I was hoping to</div>
+                <div class="checkbox-item"><input type="checkbox" name="jTermUsage" value="notPlan"> I have not and I did not plan to</div>
+                <div class="checkbox-item"><input type="checkbox" name="jTermUsage" value="notHelpful"> I have and it was not helpful</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="form-group">
+            <label>I would receive quality education in the 10–14 days for a 3-credit class.</label>
+            <div class="radio-group">
+                <div class="radio-item"><input type="radio" name="qualityEdu" value="true"> True</div>
+                <div class="radio-item"><input type="radio" name="qualityEdu" value="false"> False</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="form-group">
+            <label>Do you think 10–14 day intersession classes would provide the same quality education as the 3-week J term?</label>
+            <div class="radio-group">
+                <div class="radio-item"><input type="radio" name="compareJ" value="agree"> Agree</div>
+                <div class="radio-item"><input type="radio" name="compareJ" value="neutral"> Neutral</div>
+                <div class="radio-item"><input type="radio" name="compareJ" value="disagree"> Disagree</div>
+            </div>
+        </div>
+        
+<!-- Question: Terms / Agreement -->
+<div class="form-group">
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">I agree to share my feedback <span class="required">*</span></label>
+</div>
+
+        <!-- Question 9 -->
+        <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" placeholder="Share any additional feedback or suggestions..."></textarea>
+        </div>
+
+        <!-- Optional Name and Email -->
+        <div class="form-group">
+            <label for="name">Full Name (optional)</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address (optional)</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <!-- Info link -->
+        <div class="form-group">
+            <p>For more information about intersession, visit <a href="https://www.unomaha.edu/registrar/students/before-you-enroll/intersession.php" target="_blank">UNO Intersession</a></p>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Survey</button>
+            <button type="reset" class="reset-btn">Clear Form</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
