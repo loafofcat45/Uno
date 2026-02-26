@@ -167,14 +167,14 @@
         </form>
     </div>
 
-    <script>
+     <script>
+        // Show thank-you message briefly without stopping submission
         const form = document.getElementById('surveyForm');
         const successMessage = document.getElementById('successMessage');
 
-        form.addEventListener('submit', function(e){
-            e.preventDefault();
+        form.addEventListener('submit', function() {
             successMessage.style.display = 'block';
-            setTimeout(()=> successMessage.style.display='none', 5000);
+            setTimeout(() => successMessage.style.display = 'none', 5000);
         });
     </script>
 </body>
