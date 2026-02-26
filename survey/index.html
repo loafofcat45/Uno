@@ -38,7 +38,7 @@
         button { padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: 600; cursor: pointer; }
         .submit-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
         .reset-btn { background: #ecf0f1; color: #333; }
-        .success-message { display: none; background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #c3e6cb; }
+        .success-message { display: none; background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #c3e6cb; text-align: center; }
     </style>
 </head>
 <body>
@@ -47,7 +47,7 @@
         <h1>UNO Intersession Survey</h1>
         <p class="subtitle">Your feedback helps keep the focus on students. Thank you!</p>
 
-        <form id="surveyForm" action="https://formspree.io/f/xnjbwyny" method="POST" target="_blank">
+        <form id="surveyForm" action="https://formspree.io/f/mnqprvza" method="POST" target="_blank">
 
             <!-- Question 1 -->
             <div class="form-group">
@@ -160,6 +160,7 @@
                 <p>For more information about intersession, visit <a href="https://www.unomaha.edu/registrar/students/before-you-enroll/intersession.php" target="_blank">UNO Intersession</a></p>
             </div>
 
+            <!-- Buttons -->
             <div class="form-group">
                 <button type="submit" class="submit-btn">Submit Survey</button>
                 <button type="reset" class="reset-btn">Clear Form</button>
@@ -167,7 +168,7 @@
         </form>
     </div>
 
-     <script>
+    <script>
         // Show thank-you message briefly without stopping submission
         const form = document.getElementById('surveyForm');
         const successMessage = document.getElementById('successMessage');
